@@ -22,7 +22,7 @@ app.use(limiter({
 app.use(express.json())
 
 app.use(helmet())
-app.use(cors())
+app.use(cors({origin:"*"}))
 app.use(xss())
 
 
